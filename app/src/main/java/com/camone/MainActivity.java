@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -24,6 +25,13 @@ public class MainActivity extends Activity {
 
     Switch shutterStart = findViewById(R.id.checkbox_start);
     shutterStart.setChecked(pref.getBoolean(SettingsEditor.startOnBoot, false));
+
+    ImageButton githubBtn = findViewById(R.id.btn_github);
+    githubBtn.setOnClickListener(view -> {
+      Intent intent = new Intent(Intent.ACTION_VIEW);
+      intent.setData(Uri.parse("https://github.com/craftingmod/camone"));
+      startActivity(intent);
+    });
 
     RelativeLayout shutterLayout = findViewById(R.id.layout_shutter);
     // Toggle shutter

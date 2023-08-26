@@ -6,12 +6,17 @@ android {
     namespace 'com.camone'
     compileSdk 34
 
+    lintOptions {
+        //If you want to continue even if errors found use following line
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.camone"
         minSdk 28
         targetSdk 22
-        versionCode 1
-        versionName "1.0"
+        versionCode 11
+        versionName "1.1"
     }
 
     buildTypes {
