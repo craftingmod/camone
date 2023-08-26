@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CamOne</string>
+    <string name="ok">ok</string>
+    <string name="cancel">cancel</string>
+
+    <string name="forced_shutter">Forced ShutterSound</string>
+    <string name="start_on_boot">Start on Boot</string>
+
+    <string name="toast_edit_failed">Modification failed!</string>
+
+    <string name="dialog_perm_title">Request Settings permission</string>
+    <string name="dialog_perm_desc">Please allow settings permission to modify shuttersound settings.</string>
+</resources>
